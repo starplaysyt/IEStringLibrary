@@ -1,0 +1,12 @@
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/bin/Debug/net7.0/IEStringLibrary.deps.json
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/bin/Debug/net7.0/IEStringLibrary.dll
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/bin/Debug/net7.0/IEStringLibrary.pdb
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.csproj.AssemblyReference.cache
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.AssemblyInfoInputs.cache
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.AssemblyInfo.cs
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.csproj.CoreCompileInputs.cache
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.dll
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/refint/IEStringLibrary.dll
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/IEStringLibrary.pdb
+/Users/vincented/RiderProjects/IEString/IEStringLibrary/obj/Debug/net7.0/ref/IEStringLibrary.dll
