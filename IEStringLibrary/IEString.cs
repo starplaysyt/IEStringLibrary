@@ -7,6 +7,15 @@ namespace IEStringLibrary;
 public class IEString
 {
     private List<char> vault = new();
+    
+    public long Length 
+    {
+        get
+        {
+            return vault.Count;
+        }
+    }
+    
     public IEString(char[] array)
     {
         FromCharArray(array);
