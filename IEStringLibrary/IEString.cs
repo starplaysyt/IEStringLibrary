@@ -157,7 +157,7 @@ public class IEString
         {
             if (vault[i] == separator)
             {
-                list.Add(new IEString(timelist.ToArray()));
+                if (i != 0) list.Add(new IEString(timelist.ToArray()));
                 timelist.Clear();
             }
             else
