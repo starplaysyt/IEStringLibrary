@@ -82,43 +82,57 @@ public class IEString
     
     public static IEString operator +([NotNull]IEString obj1, [NotNull]IEString obj2)
     {
+        IEString retstr = new IEString(obj1.ToCharArray());
         for (int i = 0; i < obj2.vault.Count; i++)
         {
-            obj1.vault.Add(obj2.vault[i]);
+            retstr.vault.Add(obj2.vault[i]);
         }
-        return new IEString(obj1.vault);
+        return retstr;
     }
     
     public static IEString operator +([NotNull]IEString obj1, [NotNull]string obj2)
     {
+        IEString retstr = new IEString(obj1.ToCharArray());
         for (int i = 0; i < obj2.Length; i++)
         {
-            obj1.vault.Add(obj2[i]);
+            retstr.vault.Add(obj2[i]);
         }
 
-        return new IEString(obj1.vault);
+        return retstr;
     }
     
     public static IEString operator +([NotNull]string obj2, [NotNull]IEString obj1)
     {
-        IEString ret = new IEString(obj2);
-        ret += obj1;
-        return ret;
+        IEString retstr = new IEString(obj2.ToArray());
+        retstr += obj1;
+        return retstr;
     }
     
     public static IEString operator +([NotNull]IEString obj1, [NotNull]char obj2)
     {
-        obj1.vault.Add(obj2);
-        return new IEString(obj1.vault);
+        IEString retstr = new IEString(obj1.ToCharArray());
+        retstr.vault.Add(obj2);
+        return retstr;
     }
 
     public static IEString operator +([NotNull] char obj1, IEString obj2)
     {
-        IEString ret = new IEString(obj2.vault);
-        ret.vault.Insert(0, obj1);
-        return ret;
+        IEString retstr = new IEString(obj2.vault.ToArray());
+        retstr.vault.Insert(0, obj1);
+        return retstr;
     }
     #endregion
+
+    public void Append(params IEString[] args)
+    {
+        for (int i = 0; i < args.Length; i++)
+        {
+            for (int j = 0; j < args[i].Length; j++)
+            {
+                vault.Add(args[i].vault[j]);
+            }
+        }
+    }
 
     public char ElementAt(int index)
     {
